@@ -1,86 +1,36 @@
 .section {
+    width: 100%;
+    height: 100%;
+    margin: auto;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .container {
-    width: 50vw;
     color: black;
     font-weight: 500;
     font-size: 0.9rem;
 }
 
-.img {
-    position: absolute;
-    top: 30%;
-    left: 65%;
-    border-radius: 50%;
-    margin: auto;
-    width: 15rem;
-    height: 15rem;
-    rotate: 0deg
-}
 
-.motion {
-    position: absolute;
-    top: 30%;
-    left: 65%;
-    background-color: #43FFFF;
-    border-radius: 50%;
-    width: 15.5rem;
-    height: 15.5rem
-}
-
-.div {
-    width: 100%;
-}
-
-@media screen and (max-width: 1400px) {
-
-    .motion {
-        position: absolute;
-        top: 34%;
-        left: 60%;
-        background-color: #43FFFF;
-        border-radius: 50%;
-        width: 15rem;
-        height: 15rem;
-    }
-}
 
 @media screen and (max-width: 1280px) {
 
     .section {
+        height: 100vh;
         flex-direction: column-reverse;
-        margin-top: 20rem;
-        margin-bottom: 5rem;
-        text-align: center;
+        margin-top: 12rem;
+
     }
 
     .container {
+        text-align: center;
         width: 90%;
         margin: auto;
+        margin-bottom: 5rem;
+        margin-top: 7rem;
     }
 
-    .img {
-        position: absolute;
-        top: 34%;
-        left: 19%;
-        border-radius: 50%;
-        margin: auto;
-        width: 14rem;
-        height: 14rem;
-        rotate: 0deg
-    }
-
-    .motion {
-        position: absolute;
-        top: 34%;
-        left: 18%;
-        background-color: #43FFFF;
-        border-radius: 50%;
-        width: 15rem;
-        height: 15rem;
-    }
 }

@@ -1,6 +1,6 @@
-import profile from "../../assets/profile.png";
 import { motion } from "framer-motion";
 import s from "./About.module.css";
+import { Profile } from "../../layout/Profile/Profile";
 
 export function About() {
     return (
@@ -21,20 +21,7 @@ export function About() {
                     </p>
                 </div>
             </motion.div>
-            <div className={s.div}>
-                <motion.div className={s.motion}
-                    initial={{ scale: 1 }}
-                    transition={{ duration: 2 }}
-                    animate={{
-                        scale: [1, 1.1, 1.1, 1, 1],
-                        rotate: [0, 0, 270, 270, 0],
-                        borderRadius: ["50%", "40%", "30%", "40%", "50%"],
-                        ease: "easeInOut",
-                        type: "spring"
-                    }}>
-                </motion.div>
-                <img className={s.img} src={profile} alt="photo Damian Gonzalez" />
-            </div>
+            <Profile className={s.profile} />
         </section>
     )
 }

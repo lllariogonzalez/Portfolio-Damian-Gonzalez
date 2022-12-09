@@ -1,0 +1,53 @@
+.motion {
+    position: absolute;
+
+    background-color: #43FFFF;
+    border-radius: 50%;
+    width: 15.5rem;
+    height: 15.5rem
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    position: absolute;
+    border-radius: 50%;
+    margin: auto;
+    width: 15rem;
+    height: 15rem;
+    rotate: 0deg
+}
+
+@media screen and (max-width: 1400px) {
+
+    .motion {
+        position: absolute;
+        background-color: #43FFFF;
+        border-radius: 50%;
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .section {
+        flex-direction: column-reverse;
+        margin-top: 20rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+}
