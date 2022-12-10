@@ -10,10 +10,8 @@ export function Education() {
         <section className={s.section}>
             <motion.div
                 initial={{ y: 100 }}
-                transition={{ duration: 0.25 }}
                 animate={{
                     y: 0,
-                    ease: "easeInOut"
                 }}>
                 <div className={s.container}>
                     <div className={s.card} data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">

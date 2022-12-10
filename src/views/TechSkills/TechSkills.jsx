@@ -19,10 +19,8 @@ export function TechSkills() {
         <section className={s.section}>
             <motion.div
                 initial={{ y: 100 }}
-                transition={{ duration: 0.25 }}
                 animate={{
                     y: 0,
-                    ease: "easeInOut"
                 }}>
                 <div className={s.container}>
                     <div className={s.cards}>

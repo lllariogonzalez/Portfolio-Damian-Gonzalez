@@ -8,15 +8,12 @@ import { motion } from "framer-motion";
 export function Projects() {
     return (
         <section className={s.section}>
-
-            <div className={s.container}>
-                <motion.div
-                    initial={{ x: -100 }}
-                    transition={{ duration: 0.25 }}
-                    animate={{
-                        x: 0,
-                        ease: "easeInOut"
-                    }}>
+            <motion.div
+                initial={{ y: 100 }}
+                animate={{
+                    y: 0,
+                }}>
+                <div className={s.container}>
                     <div className={s.card} data-aos="zoom-in-up"
                         data-aos-anchor-placement="center-bottom">
                         <div className={s.cardimg}>
@@ -33,26 +30,19 @@ export function Projects() {
 
                         <div className={s.btn}>
                             <a href="https://e-commerce-tecnoshop.vercel.app" target="_blank">
-                                <button class="btn_demo">
+                                <button className="btn_demo">
                                     <img src={demo} alt="Demostración" />DEMO
                                 </button>
                             </a>
 
                             <a href="https://github.com/nangonz/E-commerce-PF" target="_blank">
-                                <button class="btn_repo">
+                                <button className="btn_repo">
                                     <img src={git} alt="Repositorio de github" />REPO
                                 </button>
                             </a>
                         </div>
                     </div>
-                </motion.div>
-                <motion.div
-                    initial={{ x: 100 }}
-                    transition={{ duration: 0.25 }}
-                    animate={{
-                        x: 0,
-                        ease: "easeInOut"
-                    }}>
+
                     <div className={s.card} data-aos="zoom-in-up"
                         data-aos-anchor-placement="center-bottom">
                         <div className={s.cardimg}>
@@ -68,20 +58,20 @@ export function Projects() {
 
                         <div className={s.btn}>
                             <a href="https://poke-app-seven.vercel.app" target="_blank">
-                                <button class="btn_demo">
+                                <button className="btn_demo">
                                     <img src={demo} alt="Demostración" />DEMO
                                 </button>
                             </a>
 
                             <a href="https://github.com/nangonz/Pokemons-SPA" target="_blank">
-                                <button class="btn_repo">
+                                <button className="btn_repo">
                                     <img src={git} alt="Repositorio de github" />REPO
                                 </button>
                             </a>
                         </div>
                     </div>
-                </motion.div>
-            </div>
+                </div>
+            </motion.div>
 
         </section>
     )
