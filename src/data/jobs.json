@@ -1,0 +1,88 @@
+[
+    {
+        "id": "1",
+        "jobPicture": "tecnoshop.webp",
+        "jobColor": "#0086eb",
+        "jobTitle": "Desarrollador Web Full Stack",
+        "jobTime": "Octubre - Diciembre 2022",
+        "jobCompany": "edutech soyHenry",
+        "jobDescription": "Participé en un equipo de desarrollo ágil con sprints de una semana presentándole a un Product Owner avances sobre el desarrollo de una app completa de un E-commerce con diseño y desarrollo de las siguientes features: CRUD de productos, authentication, catálogo, checkout, etc.",
+        "jobActivities": [
+            "Coordinación de la ejecución ágil del proyecto con Scrum.",
+            "Implementación de Administración de usuarios y gestión de claves.",
+            "Integrar pasarela de Pago (Mercado Pago).",
+            "Implementación de carrito de compras y órdenes de productos",
+            "Programación de interfaces con React.js.",
+            "Desarrollo de APIs con Node.js y Express.js.",
+            "Consumo de REST APIs con JavaScript.",
+            "Modelado e implementación de bases de datos en PostgreSQL."
+        ],
+        "jobTechnologies": [
+            { "name": "React.js", "icon": "react" },
+            {
+                "name": "Styled Components",
+                "icon": "styledcomponents"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "Node.js",
+                "icon": "node"
+            },
+            {
+                "name": "Express.js",
+                "icon": "express"
+            },
+            {
+                "name": "NPM",
+                "icon": "npm"
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "postgresql"
+            },
+            {
+                "name": "Sequelize",
+                "icon": "sequelize"
+            },
+            {
+                "name": "Git",
+                "icon": "git"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "jobPicture": "pokeapp.webp",
+        "jobColor": "#3a7d44",
+        "jobTitle": "Desarrollador Web Full Stack",
+        "jobTime": "Septiembre - Octubre 2022",
+        "jobCompany": "eduTech soyHenry",
+        "jobDescription": "Desarrollo de una Single Page Aplication con temática pokémon con búsqueda, filtros, paginado y CRUD de personajes utilizando React, Redux, NodeJS, ExpressJS, Sequelize.",
+        "jobActivities": [
+            "Diseño y programación de interfaces de usuario con HTML, CSS y JavaScript, con diseño responsivo.",
+            "Desarrollo backend con ExpressJS.",
+            "Crear componentes reutilizables en React.",
+            "Implementación de búsqueda, filtrado y paginación.",
+            "Modelado e implementación de bases de datos MySQL."
+        ],
+        "jobTechnologies": [
+            { "name": "HTML", "icon": "html" },
+            { "name": "CSS", "icon": "css" },
+            { "name": "JavaScript", "icon": "javascript" },
+            { "name": "React.js", "icon": "react" },
+            { "name": "MySQL", "icon": "mysql" },
+            { "name": "Node.js", "icon": "node" },
+            { "name": "Express.js", "icon": "express" },
+            { "name": "NPM", "icon": "npm" },
+            { "name": "PostgreSQL", "icon": "postgresql" },
+            { "name": "Git", "icon": "git" }
+        ]
+    }
+]

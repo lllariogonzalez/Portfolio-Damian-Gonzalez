@@ -1,0 +1,82 @@
+---
+import Logo from "./logo.astro";
+import henry from "../../public/education/soyHenry.webp"
+import footerPic from "../../public/footerPic.webp"
+---
+
+<footer
+    class="flex flex-col border-t-[5px] border-[#ed434311] dark:border-[#ffffff15] py-10 gap-12"
+>
+    <section
+        class="flex flex-col sm:flex-row sm:items-center gap-8 sm:justify-between"
+    >
+        <div
+            class="flex gap-2 items-center font-bold text-light-texto-primary dark:text-dark-texto-primary"
+        >
+            <figure class="flex flex-col items-center justify-center">
+                <figcaption><small>Creado con:</small></figcaption>
+                <Logo />
+            </figure>
+        </div>
+        <ul class="flex flex-col sm:flex-row gap-3 sm:gap-6">
+            <li>
+                <a
+                    class="text-light-texto-secondary dark:text-dark-texto-secondary font-medium text-[0.91rem] hover:text-light-texto-primary dark:hover:text-dark-texto-primary transition-colors hover:underline"
+                    href="#home">Inicio</a
+                >
+            </li>
+            <li>
+                <a
+                    class="text-light-texto-secondary dark:text-dark-texto-secondary font-medium text-[0.91rem] hover:text-light-texto-primary dark:hover:text-dark-texto-primary transition-colors hover:underline"
+                    href="#jobs">Experiencia</a
+                >
+            </li>
+            <li>
+                <a
+                    class="text-light-texto-secondary dark:text-dark-texto-secondary font-medium text-[0.91rem] hover:text-light-texto-primary dark:hover:text-dark-texto-primary transition-colors hover:underline"
+                    href="#projects">Proyectos</a
+                >
+            </li>
+            <li>
+                <a
+                    class="text-light-texto-secondary dark:text-dark-texto-secondary font-medium text-[0.91rem] hover:text-light-texto-primary dark:hover:text-dark-texto-primary transition-colors hover:underline"
+                    href="#education">Educación</a
+                >
+            </li>
+            <li>
+                <a
+                    class="text-light-texto-secondary dark:text-dark-texto-secondary font-medium text-[0.91rem] hover:text-light-texto-primary dark:hover:text-dark-texto-primary transition-colors hover:underline"
+                    href="/DamianGonzalez_CV.pdf"
+                    target="_blank">Currículum</a
+                >
+            </li>
+        </ul>
+    </section>
+    <section
+        class="flex flex-col sm:flex-row sm:items-center gap-8 sm:justify-end"
+    >
+        <img 
+            src={footerPic} 
+            alt="footerPicture"
+            class="flex justify-start items-start sm:h-[100px] w-[100px]"
+        >
+        <small
+            class="text-light-gray-primary dark:text-dark-gray-primary text-[0.75rem] max-w-md sm:text-end"
+            >🚀 Henry Talent es una plataforma donde puedes encontrar talento tech de latam. 🤙🏻 Puedes visitar mi Perfil <a
+                class="text-light-texto-primary dark:text-dark-texto-primary hover:underline"
+                href="https://www.talent.soyhenry.com/?hl=es&searchInput=Damian%20Gonzalez"
+                target="_blank">aquí</a
+            >.
+        </small>
+        <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3">
+                <img
+                    src={henry}
+                    alt="henrylogo"
+                    class="flex items-center justify-center text-[0.7rem] text-center h-11 w-11 bg-light-gray-secondary dark:bg-dark-gray-secondary rounded-md"
+                    loading="lazy"
+                />
+            </div>
+        </div>
+    </section>
+</footer>
