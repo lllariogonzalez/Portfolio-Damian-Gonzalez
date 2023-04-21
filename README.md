@@ -1,51 +1,47 @@
-# Portfolio
+<h1 align="center">
+  <div align="center">
+    <img alt="Damian Gonzalez logo" src="./public/dglogobrand.svg" height="150px" width="auto"/>
+  </div>
+  <br/>
+  Portfolio - Damian Gonzalez
+</h1>
+<p align="center">
+    My personal portfolio built with Astro.
+    <br />
+    <a href="https://damiangonzalez.tech">Go to website</a>&nbsp;
+    ·
+    &nbsp;<a href="https://github.com/nangonz">Report Bug</a>
+  </p>
+<br/>
 
-[![](https://img.shields.io/badge/README-Español-red)](./README.es.md)
+## Built With 🚀
 
-Portfolio Damian Gonzalez
+This project was built using these technologies:
 
-## Descripción
+* Astro
+* Tailwind
 
-PortFolio personal desarrollador web - full stack developers, cuenta con las siguientes secciones:
-- Sobre mi
-- Habilidades Tecnologicas
-- Educación
-- Proyectos Realizados
-- Contacto
+## Getting Started
 
-## Librerías
+Clone down this repository. You will need `node.js` and `git` installed globally.
 
-- [Create React App][cra] - Creación del proyecto
-- [React Router][router] - Routing y navegación
-- [Styled Components][styled] - CSS-in-JS
-- [Framer-Motion][styled] - Animación y transciciones
+### Installation and Setup Instructions 🛠
 
-## Scripts
+1. In the project directory, run:
 
-- `npm start`
-    Inica el proyecto en entorno de desarrollo.
-- `npm build`
-    Crea los archivos para producción.
-- `npm test`
-    Inica el proyecto para ejecutar tests.
+ ```
+ npm install
+ ```
 
-## Prerequisitos
+2. After, you can run:
 
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Node.js](https://nodejs.org)
+```
+npm run dev
+```
 
-## Otras herramientas usadas
+This runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Adobe Photoshop & Illustrator - Logo, loader, ilustraciones e imágenes de productos
-- [RegExr][regexr] - Herramienta para aprender expresiones regulares
+### Show your support
 
-## Estructura de las carpetas
-
-- `src`: Contiene todo el código fuente.
-    - `components`: Componentes generales que se usan en toda la app.
-    - `views`: Componentes específicos de cada vista.
-    - `layout`: Contiene el header y el footer.
-    - `GlobalStyle`: Componente con los estilos gereales, variables CSS y temas.
-    - `utils`: Lógica compartida en toda la app. 
-    - `assets`: Contiene imágenes y tipogafías.
-- `App.js`: Componente principal.
+Give a ⭐ if you like this website. Thanks!
