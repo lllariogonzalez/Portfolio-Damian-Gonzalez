@@ -2,24 +2,23 @@
     <button
         data-active="false"
         id="topbar-menu-button"
-        class="p-2 rounded-md text-light-gray-primary dark:text-dark-gray-primary hover:bg-[#0001] dark:hover:bg-[#fff1] hover:text-light-texto-primary dark:hover:text-dark-texto-primary transition-colors data-[active=true]:bg-[#0001] dark:data-[active=true]:bg-[#fff1] data-[active=true]:text-light-texto-primary dark:data-[active=true]:text-dark-texto-primary"
+        class="p-2.5 rounded-md text-light-gray-primary dark:text-dark-gray-primary hover:bg-[#0001] dark:hover:bg-[#fff1] hover:text-light-texto-primary dark:hover:text-dark-texto-primary transition-colors data-[active=true]:bg-[#0001] dark:data-[active=true]:bg-[#fff1] data-[active=true]:text-light-texto-primary dark:data-[active=true]:text-dark-texto-primary"
     >
         <svg
             xmlns="../../"
-            width="20"
-            height="20"
+            width="25"
+            height="25"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="currentColor"
-            stroke-width="1.7"
+            stroke="#ff65c5"
+            stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            ><line x1="4" y1="12" x2="20" y2="12"></line><line
-                x1="4"
-                y1="6"
-                x2="20"
-                y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg
-        >
+            >
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
     </button>
     <ul
         data-active=""
@@ -33,12 +32,12 @@
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
+                    width="20"
+                    height="20"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
+                    stroke="#bfff71"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     ><rect x="2" y="7" width="20" height="14" rx="2" ry="2"
@@ -59,8 +58,8 @@
                     height="20"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
+                    stroke="#bfff71"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     ><path
@@ -83,8 +82,8 @@
                     height="20"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
+                    stroke="#bfff71"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     ><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path
@@ -108,8 +107,8 @@
                     height="20"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
+                    stroke="#bfff71"
+                    stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     ><path
@@ -132,7 +131,7 @@
                     height="20"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
+                    stroke="#bfff71"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -155,6 +154,7 @@
 
     $menuBtn.addEventListener("click", (event) => {
         let isButtonActive = $menuBtn.getAttribute("data-active");
+        
         $menuBtn.setAttribute(
             "data-active",
             isButtonActive === "true" ? "false" : "true"
