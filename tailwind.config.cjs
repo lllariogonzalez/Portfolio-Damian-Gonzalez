@@ -42,6 +42,9 @@ module.exports = {
                     },
                 },
                 primary: "#ffb200",
+                mainPink: "#ff65c5",
+                mainBlue: "#43a1f1",
+                mainGreen: "#bfff71",
             },
             gridTemplateColumns: {
                 modal: "auto 23rem",
