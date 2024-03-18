@@ -157,6 +157,21 @@
     const $topbarMenuContainer = document.getElementById(
         "topbar-menu-container"
     );
+    const hamburgerSvgIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" width="1.6em" height="1.6em" 
+    viewBox="0 0 24 24"><g fill="none" stroke="#ff65c5" stroke-linecap="round" stroke-width="2">
+    <path d="M5 5L19 19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 5L19 19;M5 5L19 5"/>
+    </path><path d="M12 12H12" opacity="0"><animate fill="freeze" attributeName="d" 
+    begin="0.2s" dur="0.4s" values="M12 12H12;M5 12H19"/><set attributeName="opacity" begin="0.2s" to="1"/>
+    </path><path d="M5 19L19 5"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 19L19 5;M5 19L19 19"/>
+    </path></g></svg>`
+
+    const closeSvgIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="svgIcon" width="1.5em" height="1.5em" 
+    viewBox="0 0 24 24"><g fill="none" stroke="#ff65c5" stroke-linecap="round" stroke-width="2"><path d="M5 5L19 5">
+    <animate fill="freeze" attributeName="d" begin="0.2s" dur="0.4s" values="M5 5L19 5;M5 5L19 19"/>
+    </path><path d="M5 12H19"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5 12H19;M12 12H12"/>
+    <set attributeName="opacity" begin="0.4s" to="0"/></path><path d="M5 19L19 19">
+    <animate fill="freeze" attributeName="d" begin="0.2s" dur="0.4s" values="M5 19L19 19;M5 19L19 5"/>
+    </path></g></svg>`
 
     $menuBtn.addEventListener("click", toggleMenu)
     $svgBtn.addEventListener("click", toggleMenu)
@@ -170,74 +185,9 @@
         $menu.setAttribute("data-active", isButtonActive);
 
         if(isButtonActive === "true"){
-            $menuBtn.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" class="svgIcon"
-                    width="1.5em" height="1.5em" 
-                    viewBox="0 0 24 24">
-                    <g fill="none" stroke="#ff65c5" 
-                        stroke-linecap="round" 
-                        stroke-width="2">
-                    <path d="M5 5L19 5">
-                        <animate fill="freeze" 
-                            attributeName="d" 
-                            begin="0.2s" 
-                            dur="0.4s" 
-                            values="M5 5L19 5;M5 5L19 19"
-                    />
-                    </path>
-                    <path d="M5 12H19">
-                        <animate fill="freeze" 
-                        attributeName="d" 
-                        dur="0.4s" 
-                        values="M5 
-                        12H19;M12 
-                        12H12"
-                    />
-                    <set attributeName="opacity" 
-                        begin="0.4s" 
-                        to="0"
-                    />
-                    </path>
-                    <path d="M5 19L19 19">
-                        <animate fill="freeze" 
-                        attributeName="d" 
-                        begin="0.2s" 
-                        dur="0.4s" 
-                        values="M5 19L19 19;M5 19L19 5"
-                    />
-                    </path></g>
-                </svg>
-            `
+            $menuBtn.innerHTML = closeSvgIcon
         } else {
-            $menuBtn.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="svgIcon"
-                    width="1.5em" height="1.5em" 
-                    viewBox="0 0 24 24">
-                    <g fill="none" stroke="#ff65c5" 
-                    stroke-linecap="round" stroke-width="2">
-                    <path d="M5 5L19 19">
-                        <animate fill="freeze" attributeName="d" 
-                            dur="0.4s" 
-                            values="M5 5L19 19;M5 5L19 5"
-                        />
-                    </path>
-                    <path d="M12 12H12" opacity="0">
-                        <animate fill="freeze" attributeName="d" 
-                            begin="0.2s" 
-                            dur="0.4s" 
-                            values="M12 12H12;M5 12H19"
-                        />
-                    <set attributeName="opacity" 
-                        begin="0.2s" to="1"
-                    />
-                    </path><path d="M5 19L19 5">
-                        <animate fill="freeze" attributeName="d" 
-                        dur="0.4s" values="M5 19L19 5;M5 19L19 19"
-                    />
-                    </path></g>
-                </svg>
-            `
+            $menuBtn.innerHTML = hamburgerSvgIcon
         }
         console.log($svgBtn)
         event.stopPropagation()
@@ -247,6 +197,7 @@
         element.addEventListener("click", () => {
             $menuBtn.setAttribute("data-active", "false");
             $menu.setAttribute("data-active", "false");
+            $menuBtn.innerHTML = hamburgerSvgIcon
         });
     });
 
@@ -254,35 +205,7 @@
         if (!$topbarMenuContainer.contains(event.target)) {
             $menuBtn.setAttribute("data-active", "false");
             $menu.setAttribute("data-active", "false");
-            $menuBtn.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="svgIcon"
-                    width="1.6em" height="1.6em" 
-                    viewBox="0 0 24 24">
-                    <g fill="none" stroke="#ff65c5" 
-                    stroke-linecap="round" stroke-width="2">
-                    <path d="M5 5L19 19">
-                        <animate fill="freeze" attributeName="d" 
-                            dur="0.4s" 
-                            values="M5 5L19 19;M5 5L19 5"
-                        />
-                    </path>
-                    <path d="M12 12H12" opacity="0">
-                        <animate fill="freeze" attributeName="d" 
-                            begin="0.2s" 
-                            dur="0.4s" 
-                            values="M12 12H12;M5 12H19"
-                        />
-                    <set attributeName="opacity" 
-                        begin="0.2s" to="1"
-                    />
-                    </path><path d="M5 19L19 5">
-                        <animate fill="freeze" attributeName="d" 
-                        dur="0.4s" values="M5 19L19 5;M5 19L19 19"
-                    />
-                    </path></g>
-                </svg>
-            ` 
+            $menuBtn.innerHTML = hamburgerSvgIcon
         }
     });
 </script>
