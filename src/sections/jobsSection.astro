@@ -7,12 +7,12 @@ import jobs from "../data/jobs.json";
     <h1
         class="font-extrabold text-light-texto-primary dark:text-[#00fa9a] text-3xl sm:text-4xl"
     >
-        Experiencia<span class="text-light-texto-secondary">.</span>
+        Experiencia
     </h1>
     <div class="relative flex flex-col gap-20">
         {jobs.map((job) => <JobCard {...job} />)}
         <div
-            class="absolute left-0 border-l-[1px] h-full z-[-1] border-dashed border-light-gray-secondary dark:border-dark-gray-secondary sm:left-[50%]"
+            class="absolute left-0 border-l-[1px] h-full z-[-1] border-dashed border-[#00fa9a] dark:border-mainPink sm:left-[50%]"
         >
         </div>
     </div>
