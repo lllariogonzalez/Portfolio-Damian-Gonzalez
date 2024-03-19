@@ -1,6 +1,38 @@
 [
     {
         "id": "1",
+        "jobPicture": "lnj.webp",
+        "jobColor": "#0086eb",
+        "jobTitle": "Desarrollador Front end",
+        "jobTime": "2023 - Actualidad",
+        "jobCompany": "La Nueva Jerusalén",
+        "jobDescription": "Sitio web en Next.js para la Iglesia que incluye control de usuarios, paneles de administración y notificaciones vía correo electrónico.",
+        "jobActivities": [
+            "Programación de interfaces con React.js.",
+            "Maquetación"
+        ],
+        "jobTechnologies": [
+            { "name": "React.js", "icon": "react" },
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "NPM",
+                "icon": "npm"
+            },
+            {
+                "name": "Git",
+                "icon": "git"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
+    },
+    {
+        "id": "2",
         "jobPicture": "tecnoshop.webp",
         "jobColor": "#0086eb",
         "jobTitle": "Desarrollador Web Full Stack",
@@ -58,7 +90,7 @@
         ]
     },
     {
-        "id": "2",
+        "id": "3",
         "jobPicture": "pokeapp.webp",
         "jobColor": "#3a7d44",
         "jobTitle": "Desarrollador Web Full Stack",
