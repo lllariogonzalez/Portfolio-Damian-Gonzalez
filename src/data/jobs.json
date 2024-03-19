@@ -40,11 +40,9 @@
         "jobCompany": "edutech soyHenry",
         "jobDescription": "Participé en un equipo de desarrollo ágil con sprints de una semana presentándole a un Product Owner avances sobre el desarrollo de una app completa de un E-commerce con diseño y desarrollo de las siguientes features: CRUD de productos, authentication, catálogo, checkout, etc.",
         "jobActivities": [
-            "Coordinación de la ejecución ágil del proyecto con Scrum.",
-            "Implementación de Administración de usuarios y gestión de claves.",
-            "Integrar pasarela de Pago (Mercado Pago).",
-            "Implementación de carrito de compras y órdenes de productos",
             "Programación de interfaces con React.js.",
+            "Implementación de Administración de usuarios y gestión de claves.",
+            "Implementación de carrito de compras y órdenes de productos",
             "Desarrollo de APIs con Node.js y Express.js.",
             "Consumo de REST APIs con JavaScript.",
             "Modelado e implementación de bases de datos en PostgreSQL."
@@ -98,11 +96,11 @@
         "jobCompany": "eduTech soyHenry",
         "jobDescription": "Desarrollo de una Single Page Aplication con temática pokémon con búsqueda, filtros, paginado y CRUD de personajes utilizando React, Redux, NodeJS, ExpressJS, Sequelize.",
         "jobActivities": [
-            "Diseño y programación de interfaces de usuario con HTML, CSS y JavaScript, con diseño responsivo.",
-            "Desarrollo backend con ExpressJS.",
-            "Crear componentes reutilizables en React.",
+            "Diseño y programación de interfaces de usuario con React.js",
             "Implementación de búsqueda, filtrado y paginación.",
-            "Modelado e implementación de bases de datos MySQL."
+            "Modelado e implementación de bases de datos MySQL.",
+            "Crear componentes reutilizables en React.",
+            "Desarrollo backend con ExpressJS."
         ],
         "jobTechnologies": [
             { "name": "HTML", "icon": "html" },
