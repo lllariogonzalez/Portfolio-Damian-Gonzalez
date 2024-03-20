@@ -29,7 +29,7 @@
     {
         "id": "dataStructures",
         "educationPicture": "freeCodeCamp.webp",
-        "educationTitle": "Full stack Web Developer",
+        "educationTitle": "Algorithms and Data structures",
         "educationType": "Plataforma web de enseñanza",
         "educationTime": "Febrero 2022",
         "educationCompany": "soyHenry",
@@ -49,7 +49,7 @@
         "educationPicture": "codoacodo.webp",
         "educationTitle": "Diseño UX UI",
         "educationType": "Capacitación para desarrolladores",
-        "educationTime": "Noviembre 2023",
+        "educationTime": "Julio 2023",
         "educationCompany": "Programa Codo a codo de la Ciudad Autónoma de Buenos Aires",
         "educationLink": "https://drive.google.com/file/d/1fyNB-rQ6RLEwDyNmpz1tHSTjGx-GNSHt/view?usp=drive_link"
     }
