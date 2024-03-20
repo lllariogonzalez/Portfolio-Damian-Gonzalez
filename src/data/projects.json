@@ -105,7 +105,7 @@
     },
     {
         "id": "guessingame",
-        "carouselImages": ["1.webp", "2.webp", "3.webp", "4.webp"],
+        "carouselImages": ["1.webp", "2.webp", "3.webp"],
         "projectRepo": "https://github.com/nangonz/wordle-game-clone",
         "projectSite": "https://wordle-guessing-game.netlify.app/",
         "projectTitle": "Guessing-game",
