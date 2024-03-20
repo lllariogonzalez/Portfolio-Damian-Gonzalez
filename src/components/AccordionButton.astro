@@ -3,15 +3,15 @@ const { dataTarget } = Astro.props;
 ---
 
 <button
-    class="accordion-button group mt-4 w-fit justify-center p-3 pr-4 flex items-center gap-1 sm:gap-2 font-semibold text-sm text-light-texto-secondary dark:text-dark-texto-secondary bg-[#0001] dark:bg-[#fff1] transition-colors rounded-lg hover:bg-light-texto-primary dark:hover:bg-dark-texto-primary hover:text-light-fondo-primary dark:hover:text-dark-fondo-primary"
+    class="accordion-button group mt-4 w-fit justify-center p-1 pr-3 flex items-center gap-1 sm:gap-2 font-semibold text-sm text-light-texto-secondary dark:text-[#fff] bg-[#0001] dark:bg-mainBlue transition-colors rounded-lg hover:bg-light-texto-primary hover:text-light-fondo-primary dark:hover:text-dark-fondo-primary"
     data-target={`accordion-${dataTarget}`}
 >
     <svg
         class="group-[.expanded]:rotate-180 transition-transform"
         xmlns="http://www.w3.org/2000/svg"
-        width="21"
-        height="21"
-        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        viewBox="0 0 20 24"
         fill="none"
         stroke="currentColor"
         stroke-width="2"
@@ -19,6 +19,6 @@ const { dataTarget } = Astro.props;
         stroke-linejoin="round"
         ><polyline points="6 9 12 15 18 9"></polyline></svg
     >
-    <span class="flex group-[.expanded]:hidden">Ver más</span>
-    <span class="hidden group-[.expanded]:flex">Ver menos</span>
+    <span class="flex group-[.expanded]:hidden">ver más</span>
+    <span class="hidden group-[.expanded]:flex">ver menos</span>
 </button>

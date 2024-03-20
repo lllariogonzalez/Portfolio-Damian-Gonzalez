@@ -5,11 +5,11 @@ import educationDegrees from "../data/education.json";
 
 <section class="flex flex-col pt-16 pb-20 gap-16" id="education">
     <h1
-        class="font-extrabold text-light-texto-primary dark:text-dark-texto-primary text-3xl sm:text-4xl"
+        class="font-extrabold text-light-texto-primary dark:text-[#00fa9a] text-3xl sm:text-4xl"
     >
-        Educación<span class="text-light-texto-secondary">.</span>
+        Educación y Certificados
     </h1>
-    <div class="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2">
+    <div class="grid grid-cols-1 gap-x-24 gap-y-12 md:grid-cols-2">
         {educationDegrees.map((education) => <EducationCard {...education} />)}
     </div>
 </section>

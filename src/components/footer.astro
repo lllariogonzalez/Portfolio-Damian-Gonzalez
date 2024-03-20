@@ -1,22 +1,22 @@
 ---
-import Logo from "./logo.astro";
 import henry from "/education/soyHenry.webp"
 import footerPic from "/footerPic.webp"
 ---
 
 <footer
-    class="flex flex-col border-t-[5px] border-[#ed434311] dark:border-[#ffffff15] py-10 gap-12"
+    class="flex flex-col border-t-[2px] border-[#ed434311] dark:border-[#43a1f1] py-10 gap-2"
 >
     <section
         class="flex flex-col sm:flex-row sm:items-center gap-8 sm:justify-between"
     >
+        <img 
+            src={footerPic} 
+            alt="footerPicture"
+            class="flex justify-start items-start sm:h-[100px] w-[100px]"
+        >
         <div
             class="flex gap-2 items-center font-bold text-light-texto-primary dark:text-dark-texto-primary"
         >
-            <figure class="flex flex-col items-center justify-center">
-                <figcaption><small>Creado con:</small></figcaption>
-                <Logo />
-            </figure>
         </div>
         <ul class="flex flex-col sm:flex-row gap-3 sm:gap-6">
             <li>
@@ -55,11 +55,6 @@ import footerPic from "/footerPic.webp"
     <section
         class="flex flex-col sm:flex-row sm:items-center gap-8 sm:justify-end"
     >
-        <img 
-            src={footerPic} 
-            alt="footerPicture"
-            class="flex justify-start items-start sm:h-[100px] w-[100px]"
-        >
         <small
             class="text-light-gray-primary dark:text-dark-gray-primary text-[0.75rem] max-w-md sm:text-end"
             >🚀 Henry Talent es una plataforma donde puedes encontrar talento tech de latam. 🤙🏻 Puedes visitar mi Perfil <a
