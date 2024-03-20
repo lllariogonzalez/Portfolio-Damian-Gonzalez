@@ -134,5 +134,41 @@
                 "icon": "github"
             }
         ]
+    },
+    {
+        "id": "vueTodoList",
+        "carouselImages": ["1.webp", "2.webp", "3.webp"],
+        "projectRepo": "https://github.com/nangonz/Vue-todo",
+        "projectSite": "https://todoappwithvue.netlify.app/",
+        "projectTitle": "Vue Todo List",
+        "projectSlogan": "Crea, edita y elimina tareas",
+        "projectDescription": "App para gestionar tareas diarias creada con Vue.js",
+
+        "projectTechnologies": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "Vue.js",
+                "icon": "vuejs"
+            },
+            {
+                "name": "Git",
+                "icon": "git"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
     }
 ]
