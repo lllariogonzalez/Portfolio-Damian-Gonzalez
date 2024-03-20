@@ -9,6 +9,24 @@
         "educationLink": "https://certificates.soyhenry.com/cert?id=8624379f-ea2c-49ae-9d7a-7f5d9e5779a2"
     },
     {
+        "id": "unCuyo",
+        "educationPicture": "unCuyo.webp",
+        "educationType": "Carrera de Grado",
+        "educationTitle": "Contabilidad Pública",
+        "educationTime": "20010-2015",
+        "educationCompany": "Universidad Nacional de Cuyo",
+        "educationLink": "https://drive.google.com/file/d/1vZowGHJteAIjCDXlbS87jJFw1h65uVOE/view?usp=sharing"
+    },
+    {
+        "id": "amicana",
+        "educationPicture": "amicana.webp",
+        "educationType": "Lengua Extranjera",
+        "educationTitle": "Inglés",
+        "educationTime": "2009-2011",
+        "educationCompany": "AMICANA",
+        "educationLink": "https://drive.google.com/file/d/1lyVW5lw7xiIFeU1q7bkGBlQ8E4-4D2kB/view?usp=sharing"
+    },
+    {
         "id": "dataStructures",
         "educationPicture": "freeCodeCamp.webp",
         "educationTitle": "Full stack Web Developer",
@@ -18,21 +36,21 @@
         "educationLink": "https://www.freecodecamp.org/certification/nangonz/javascript-algorithms-and-data-structures"
     },
     {
-        "id": "unCuyo",
-        "educationPicture": "unCuyo.webp",
-        "educationType": "Carrera de Grado",
-        "educationTitle": "Contador Público y Perito partidor",
-        "educationTime": "2009-2015",
-        "educationCompany": "Universidad Nacional de Cuyo",
-        "educationLink": "https://drive.google.com/file/d/1vZowGHJteAIjCDXlbS87jJFw1h65uVOE/view?usp=sharing"
+        "id": "reactProfesional",
+        "educationPicture": "codfacilito.webp",
+        "educationTitle": "Curso profesional de React",
+        "educationType": "Plataforma web de enseñanza",
+        "educationTime": "Noviembre 2023",
+        "educationCompany": "Código Facilito",
+        "educationLink": "https://drive.google.com/file/d/1EJjV8qrWk9wPyTmmyiEfeQgNliqy2V2a/view?usp=drive_link"
     },
     {
-        "id": "amicana",
-        "educationPicture": "amicana.webp",
-        "educationType": "Lengua Extranjera",
-        "educationTitle": "Inglés",
-        "educationTime": "2008-2011",
-        "educationCompany": "AMICANA",
-        "educationLink": "https://drive.google.com/file/d/1lyVW5lw7xiIFeU1q7bkGBlQ8E4-4D2kB/view?usp=sharing"
+        "id": "diseñoUxUi",
+        "educationPicture": "codoacodo.webp",
+        "educationTitle": "Diseño UX UI",
+        "educationType": "Capacitación para desarrolladores",
+        "educationTime": "Noviembre 2023",
+        "educationCompany": "Programa Codo a codo de la Ciudad Autónoma de Buenos Aires",
+        "educationLink": "https://drive.google.com/file/d/1fyNB-rQ6RLEwDyNmpz1tHSTjGx-GNSHt/view?usp=drive_link"
     }
 ]
