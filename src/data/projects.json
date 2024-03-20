@@ -1,11 +1,11 @@
 [
     {
         "id": "tecnoshop",
-        "carouselImages": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp"],
+        "carouselImages": ["1.webp", "2.webp", "3.webp", "4.webp"],
         "projectRepo": "https://github.com/lllariogonzalez/e-commerce",
         "projectSite": "https://e-commerce-tecnoshop.vercel.app/",
         "projectTitle": "Tecnoshop e-commerce app",
-        "projectSlogan": "Comercio electrónico de tecnología",
+        "projectSlogan": "E-commerce de tecnología",
         "projectDescription": "App completa de un e-commerce con diseño y desarrollo de las siguientes features: CRUD de productos, auth, catálogo, checkout, etc.",
 
         "projectTechnologies": [
@@ -53,11 +53,11 @@
     },
     {
         "id": "pokeapp",
-        "carouselImages": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp"],
+        "carouselImages": ["1.webp", "2.webp", "3.webp", "4.webp"],
         "projectRepo": "https://github.com/nangonz/Pokemons-SPA",
         "projectSite": "https://poke-app-seven.vercel.app/",
         "projectTitle": "Pokeapp",
-        "projectSlogan": "SPA con temática pokémon para buscar filtrar y crear",
+        "projectSlogan": "Single page application con temática pokémon",
         "projectDescription": "Una Single Page Aplication en React, Redux, NodeJS, ExpressJS, Sequelize con temática pokémon que permite buscar y conocer detalles sobre pokémons. Además filtrar por distintas categorías y la posibilidad de crear, actualizar y eliminar tus propios personajes.",
 
         "projectTechnologies": [
@@ -100,6 +100,38 @@
             {
                 "name": "Vercel",
                 "icon": "vercel"
+            }
+        ]
+    },
+    {
+        "id": "guessingame",
+        "carouselImages": ["1.webp", "2.webp", "3.webp", "4.webp"],
+        "projectRepo": "https://github.com/nangonz/wordle-game-clone",
+        "projectSite": "https://wordle-guessing-game.netlify.app/",
+        "projectTitle": "Guessing-game",
+        "projectSlogan": "Juego de adivinar la palabra al estilo wordle",
+        "projectDescription": "Projecto realizado en vanilla javascript, cubre la lógica central del juego y se utilizó una librería llamada Toastr para las notificaciones.",
+
+        "projectTechnologies": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "CSS Modules",
+                "icon": "css"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "Git",
+                "icon": "git"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
             }
         ]
     }
