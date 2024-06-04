@@ -1,15 +1,232 @@
 ---
 import Section from "@/components/printablecv-components/Section.astro"
+
+import Mail from "@/min-port-icons/Mail.astro"
+import Phone from "@/min-port-icons/Phone.astro"
+import WorldMap from "@/min-port-icons/WorldMap.astro"
+import LinkedIn from "@/min-port-icons/LinkedIn.astro"
+import Github from "@/min-port-icons/Github.astro"
+import Xtw from "@/min-port-icons/Xtw.astro"
+import FlagArg from "@/min-port-icons/FlagArg.astro"
+import FlagUsa from "@/min-port-icons/FlagUsa.astro"
+
+interface Props {
+	data: Record<string, any>;
+}
+
+const { data } = Astro.props
+
+const { name, label, image, location, profiles, phone, email } = data
+const { city, region } = location
+
+const SOCIAL_ICONS: Record<string, any> = {
+  LinkedIn,
+  Github,
+  Xtw
+}
+
+const linkedUrl = profiles.find(({ network }:any) => network === "LinkedIn")?.url
+const printInfo = [email, phone, linkedUrl].filter(Boolean)
 ---
 
 <Section>
-  <h1>Hero Section printable cv minimalist portfolio</h1>
-  <div class="languageToggle">
-    <a class="es-lang">
-      Español
-    </a>
-    <a class="en-lang">
-      English
-    </a>
+  <div class="container">
+    <div class="info">
+      <header>
+        <h1>{ name }</h1>
+        <div class="languageToggle">
+          <a class="es-lang" href="/min-portfolio">
+            <FlagArg />
+          </a>
+          <a class="en-lang" href="/min-portfolio/en">
+            <FlagUsa />
+          </a>
+        </div>
+      </header>
+      <h2>{ label }</h2>
+      <span>
+        <WorldMap />
+        {city}, {region}
+      </span>
+      <footer class="print">
+        <div class="print">
+          {
+            printInfo.map(info => (<p>{ info }</p>))
+          }
+        </div>
+      </footer>
+      <footer class="no-print">
+        {
+          email && (
+            <a 
+              href={`mailto: ${email}`}
+              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              target="_blank"
+              rel="nooperner noreferrer"
+            >
+            <Mail />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a 
+              href={`tel: ${phone}`}
+              title={`Llamar por teléfono a ${name} al número ${phone}`}
+              target="_blank"
+              rel="nooperner noreferrer"
+            >
+            <Phone />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }: any)=> {
+            const Icon = SOCIAL_ICONS[network]
+
+            return (
+              <a 
+                href={url}
+                title={`Visitar el perfil de ${username} en ${network}`}
+                target="_blank"
+                rel="nooperner noreferrer"
+              >
+                <Icon />
+              </a>
+            )
+          })
+        }
+      </footer>
+    </div>
+    <figure>
+      <img class="profilePic" src={image} alt={name}>
+    </figure>
   </div>
 </Section>
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  header div .es-lang {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding-inline: 8px;
+    padding-block: 2px;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  header div .es-lang:hover {
+    background: #eee;
+  }
+
+  header div .en-lang {
+    border: 1px solid #ccc;
+    padding-inline: 8px;
+    padding-block: 2px;
+    border-radius: 1px 10px 10px 1px;
+  }
+
+    header div .en-lang:hover {
+    background: #eee;
+  }
+
+  .profilePic {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 7rem;
+    border-radius: 0.5rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    color: #555;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-wrap: balance;
+  }
+
+  span {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    letter-spacing: -0.05rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    padding-right: 2rem;
+  }
+
+  footer {
+    display: flex;
+    gap: 4px;
+    margin-top: .5rem;
+  }
+
+  footer a {
+    color: #777;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    transition: all .5s ease;
+  }
+
+  footer a:hover {
+    background: #eee;
+    border: 1px solid #ddd;
+  }
+
+  footer p {
+    font-size: .75rem;
+    color: #555;
+  }
+
+  .print {
+    display: none;
+  }
+
+  @media print {
+    .print {
+      display: block;
+    }
+    .no-print {
+      display: none;
+    }
+    header div a {
+      display: none;
+    }
+  }
+
+</style>
