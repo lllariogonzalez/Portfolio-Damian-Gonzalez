@@ -1,0 +1,72 @@
+---
+import Section from "./Section.astro"
+import Git from "@/icons/Git.astro"
+import Github from "@/icons/Github.astro"
+import CSS from "@/icons/CSS.astro"
+import HTML from "@/icons/HTML.astro"
+import Javascript from "@/icons/Javascript.astro"
+import Tailwind from "@/icons/Tailwind.astro"
+import Typescript from "@/icons/Typescript.astro"
+import Node from "@/icons/Node.astro"
+import MySQL from "@/icons/MySQL.astro"
+import Next from "@/icons/Next.astro"
+import React from "@/icons/React.astro"
+
+interface Props {
+  data: any;
+  sectionTitle: string;
+}
+
+const { data, sectionTitle } = Astro.props
+
+const SKILLS_ICONS: Record<string, any> = {
+  Github,
+  Git,
+  CSS,
+  HTML,
+  MySQL,
+  Javascript,
+  Tailwind,
+  Typescript,
+  Node,
+  Next,
+  React
+}
+
+---
+<Section title={sectionTitle} >
+  <ul>
+    {
+      data.map(({ name }:any) => {
+        const Icon = SKILLS_ICONS[name]
+        return (
+          <li>
+            {Icon && <Icon />}
+            <span>{name}</span>
+          </li>
+        )
+      })
+    }
+  </ul>
+<Section />
+
+<style>
+  ul {
+    display: inline-flex;
+    gap: .35rem;
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 6px;
+    background: #eee;
+    color: #000;
+    font-size: .75rem;
+    font-weight: 500;
+    padding: .25rem .75rem;
+    min-height: 1.8rem;
+  }
+</style>
