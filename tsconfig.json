@@ -22,7 +22,15 @@
       ],
       "@/*": [
         "src/*"
+      ],
+      "@p/*": [
+        "./public/*"
       ]
-    }
+    },
+    "plugins": [
+			{
+				"name": "@astrojs/ts-plugin"
+			}
+		]
   },
 }

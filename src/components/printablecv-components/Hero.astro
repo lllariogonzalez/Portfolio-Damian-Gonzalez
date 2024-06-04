@@ -1,16 +1,15 @@
 ---
-import { getRelativeLocaleUrlList } from 'astro:i18n';
-const localeUrls = getRelativeLocaleUrlList();
-
 import Section from "@/components/printablecv-components/Section.astro"
 ---
 
 <Section>
   <h1>Hero Section printable cv minimalist portfolio</h1>
   <div class="languageToggle">
-          <a class="es-lang" href={localeUrls[0]}>
-          </a>
-          <a class="en-lang" href={localeUrls[1]}>
-          </a>
-        </div>
+    <a class="es-lang">
+      Español
+    </a>
+    <a class="en-lang">
+      English
+    </a>
+  </div>
 </Section>
