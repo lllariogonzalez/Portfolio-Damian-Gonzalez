@@ -3,6 +3,7 @@
 import PrintableLayout from '@/layouts/printableLayout.astro'
 
 import Hero from '@/components/printablecv-components/Hero.astro'
+import About from '@/components/printablecv-components/About.astro';
 import KeyboardManager from '@/components/printablecv-components/KeyboardManager.astro'
 
 import { basics } from "@cv"
@@ -12,8 +13,9 @@ const { name } = basics
 <PrintableLayout language="es" title=`CV minimalista - ${name}`>
 	<main>
 		<Hero data={basics} />
-		<KeyboardManager />
+		<About data={basics.summary} sectionTitle="About me" />
 	</main>
+	<KeyboardManager />
 </PrintableLayout>
 
 <style>
