@@ -4,9 +4,10 @@ import PrintableLayout from '@/layouts/printableLayout.astro'
 
 import Hero from '@/components/printablecv-components/Hero.astro'
 import About from '@/components/printablecv-components/About.astro';
+import Education from '@/components/printablecv-components/Education.astro';
 import KeyboardManager from '@/components/printablecv-components/KeyboardManager.astro'
 
-import { basics } from "@cv-eng";
+import { basics, education } from "@cv-eng";
 const { name } = basics
 ---
 
@@ -14,6 +15,8 @@ const { name } = basics
 	<main>
 		<Hero data={basics} />
 		<About data={basics.summary} sectionTitle="About me" />
+		<Education data={education} sectionTitle="Education" />
+
 	</main>
 	
 	<KeyboardManager />
