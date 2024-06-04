@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Damian Gonzalez",
-    "label": "Desarrollador Fullstack con preferencia por el frontend",
+    "label": "Fullstack Developer currently working as freelancer",
     "image": "/footerPic.webp",
     "email": "nangonz91@gmail.com",
     "phone": "+54 2612451106",
     "url": "https://damian-gonzalez.vercel.app",
-    "summary": "Desarrollador Web fullstack Javascript con preferencia por el front end. Estudié además diseño UX UI en el programa “codo a codo” del Ministerio de Educación de CABA. Durante mi formación he sido parte de equipos de trabajo multiculturales donde pude desarrollar habilidades de comunicación y de trabajo en equipo participando en el desarrollo front end y back end de aplicaciones web implementando una metodología de trabajo ágil.",
+    "summary": "I am a full stack Javascript Web Developer with a preference for front end. I also studied UX UI design in a program of the Ministry of Education of CABA. During my training I have been part of multicultural work teams where I was able to develop communication and teamwork skills participating in the front end and back end development of web applications implementing an agile work methodology.",
     "location": {
       "address": "",
       "postalCode": "5525",
@@ -38,27 +38,27 @@
   "experience": [
     {
       "name": "La Nueva Jerusalén",
-      "position": "Desarrollador Front end",
+      "position": "Front end Developer",
       "url": "https://www.lanuevajerusalenamorysalvacion.com/",
       "startDate": "2023",
-      "endDate": "Actualidad",
-      "summary": "Sitio web en Next.js para la Iglesia que incluye control de usuarios, paneles de administración y notificaciones vía correo electrónico."
+      "endDate": "Present",
+      "summary": "Next.js website for the church that includes user management, administration panels and email notifications."
     },
     {
       "name": "E-commerce Tecnoshop",
-      "position": "Desarrollador Full stack",
+      "position": "Full stack Developer",
       "url": "https://e-commerce-tecnoshop.vercel.app/",
       "startDate": "Octubre 2022",
       "endDate": "Noviembre 2022",
-      "summary": "Colaboré en el diseño y desarrollo de un e-commerce de tecnología como parte de un equipo ágil que seguía la metodología SCRUM. Mi enfoque principal estuvo en el front end utilizando React."
+      "summary": "I participated in the design and development of a technology e-commerce as part of an agile team following the SCRUM methodology. My main focus was on the front end using React."
     },
     {
       "name": "Pokeapp (académico)",
-      "position": "Desarrollador Full stack",
+      "position": "Full stack Developer",
       "url": "https://poke-app-seven.vercel.app/home",
       "startDate": "Septiembre 2022",
       "endDate": "Octubre 2022",
-      "summary": "Single Page Application utilizando React, Redux, Javascript, HTML y CSS. Paginado, Filtrado, Creación, Consumo de Rest Api de pokemon."
+      "summary": "Single Page Application using React, Redux, Javascript, HTML and CSS. Pagination, Filtering, Creation, Consumption of Rest Api of pokemon."
     }
   ],
   "volunteer": [{
@@ -77,7 +77,7 @@
       "institution": "HENRY",
       "url": "https://www.soyhenry.com",
       "area": "Desarrollo Web Full Stack",
-      "studyType": "Bootcamp de Programación con +800 hs de práctica",
+      "studyType": "Programming Bootcamp with +800 hours of training.",
       "startDate": "Marzo 2022",
       "endDate": "Diciembre 2022",
       "score": null,
@@ -87,7 +87,7 @@
       "institution": "AMICANA",
       "url": "https://www.amicana.com",
       "area": "Idioma",
-      "studyType": "Curso de Inglés Avanzado",
+      "studyType": "Advanced English Course",
       "startDate": "Marzo 2009",
       "endDate": "Diciembre 2011",
       "score": null,
@@ -97,7 +97,7 @@
       "institution": "Codigo Facilito",
       "url": "https://codigofacilito.com/",
       "area": "Desarrollo Front End",
-      "studyType": "Curso Profesional de React",
+      "studyType": "React Professional Course",
       "startDate": "Noviembre 2023",
       "endDate": "Diciembre 2023",
       "score": null,
@@ -107,7 +107,7 @@
       "institution": "Programa Codo a Codo",
       "url": "https://inscripcionesagencia.bue.edu.ar/codoacodo/",
       "area": "Diseño UX-UI",
-      "studyType": "Curso de experiencia de usuario y diseño de interfaces en figma",
+      "studyType": "User experience and interface design course at figma",
       "startDate": "Marzo 2023",
       "endDate": "Julio 2023",
       "score": null,
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "name": "Javascript",
+      "name": "JavaScript",
       "keywords": [
         "Desarrollo Web", "Frontend", "Backend", "Fullstack"
       ]
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "name": "Typescript",
+      "name": "TypeScript",
       "keywords": [
         "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
       ]
@@ -183,13 +183,13 @@
       ]
     },
     {
-      "name": "Github",
+      "name": "GitHub",
       "keywords": [
         "Control de Versiones", "Colaboración", "Código Fuente", "Git"
       ]
     },
     {
-      "name": "Next",
+      "name": "Next.js",
       "keywords": [
         "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
       ]
