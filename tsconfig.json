@@ -19,7 +19,7 @@
         "./src/cv.json"
       ],
       "@cv-eng": [
-        "./cv-eng.json"
+        "./src/cv-eng.json"
       ],
       "@/*": [
         "src/*"

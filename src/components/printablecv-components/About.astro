@@ -1,0 +1,12 @@
+---
+import Section from "@/components/printablecv-components/Section.astro"
+
+interface Props {
+  data: string;
+  sectionTitle: string;
+}
+const { data, sectionTitle }= Astro.props
+---
+<Section title={sectionTitle} >
+  <p>{data}</p>
+<Section />
