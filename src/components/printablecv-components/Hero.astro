@@ -48,7 +48,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
         </div>
       </header>
       <h2 class="dark:text-[#ddd]">{ label }</h2>
-      <span class="dark:text-[#ccc]">
+      <span class="dark:text-[#ddd]">
         <WorldMap />
         {city}, {region}
       </span>
@@ -195,21 +195,20 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
   }
 
   footer a {
-    color: #ddd;
+    color: #777;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #aab;
+    border: 1px solid #eee;
     padding: 4px;
     height: 32px;
     width: 32px;
     border-radius: 6px;
-    transition: all .3s ease;
+    transition: all .5s ease;
   }
 
   footer a:hover {
-    color: #1a1a1a;
-    background: #ddd;
+    background: #eee;
     border: 1px solid #ddd;
   }
 
