@@ -15,7 +15,7 @@ const { name } = basics
 ---
 
 <PrintableLayout language="es" title=`CV minimalista - ${name}`>
-	<main>
+	<main class="p-16 m-auto w-full">
 		<Hero data={basics} />
 		<About data={basics.summary} sectionTitle="Sobre mí" />
 		<Experience data={experience} sectionTitle="Experiencia" />
@@ -25,11 +25,3 @@ const { name } = basics
 	</main>
 	<KeyboardManager />
 </PrintableLayout>
-
-<style>
-	main {
-		padding: 4rem;
-		margin: auto;
-		width: 100%
-	}
-</style>

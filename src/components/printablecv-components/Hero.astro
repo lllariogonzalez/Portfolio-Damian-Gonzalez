@@ -37,7 +37,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
         <div class="theme-toggle-button">
           <ThemeToggle />
         </div>
-        <h1>{ name }</h1>
+        <h1 class="dark:text-[#ddd] font-semibold">{ name }</h1>
         <div class="languageToggle">
           <a class="es-lang" href="/min-portfolio">
             <FlagArg />
@@ -47,8 +47,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
           </a>
         </div>
       </header>
-      <h2>{ label }</h2>
-      <span>
+      <h2 class="dark:text-[#ddd]">{ label }</h2>
+      <span class="dark:text-[#ccc]">
         <WorldMap />
         {city}, {region}
       </span>
@@ -195,20 +195,21 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
   }
 
   footer a {
-    color: #777;
+    color: #ddd;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #eee;
+    border: 1px solid #aab;
     padding: 4px;
     height: 32px;
     width: 32px;
     border-radius: 6px;
-    transition: all .5s ease;
+    transition: all .3s ease;
   }
 
   footer a:hover {
-    background: #eee;
+    color: #1a1a1a;
+    background: #ddd;
     border: 1px solid #ddd;
   }
 
