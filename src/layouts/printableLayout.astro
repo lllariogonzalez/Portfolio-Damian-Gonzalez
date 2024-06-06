@@ -13,13 +13,25 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/cvicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/dglogoBlueGreen.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-light-fondo-primary dark:bg-dark-fondo-primary">
 		<slot />
-	</body>
+		<script>
+			const darkThemeMq = window.matchMedia(
+				"(prefers-color-scheme: dark)"
+			);
+			if (darkThemeMq.matches) {
+				document.body.classList.add("dark");
+				document.documentElement.classList.add("dark");
+			} else {
+				document.body.classList.remove("dark");
+				document.documentElement.classList.remove("dark");
+			}
+		</script>
+  </body>
 </html>
 <style is:global>
 	html {

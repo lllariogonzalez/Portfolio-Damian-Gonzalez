@@ -9,6 +9,7 @@ import Github from "@/min-port-icons/Github.astro"
 import Xtw from "@/min-port-icons/Xtw.astro"
 import FlagArg from "@/min-port-icons/FlagArg.astro"
 import FlagUsa from "@/min-port-icons/FlagUsa.astro"
+import ThemeToggle from "../themeToggle.astro"
 
 interface Props {
 	data: Record<string, any>;
@@ -33,6 +34,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
   <div class="container">
     <div class="info">
       <header>
+        <div class="theme-toggle-button">
+          <ThemeToggle />
+        </div>
         <h1>{ name }</h1>
         <div class="languageToggle">
           <a class="es-lang" href="/min-portfolio">
