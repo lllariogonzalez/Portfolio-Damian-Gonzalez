@@ -31,13 +31,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
 ---
 
 <Section>
-  <div class="container">
-    <div class="info">
+  <div class="flex flex-row items-center justify-between gap-4">
+    <div class="flex flex-col gap-[0.35rem] pr-8">
       <header>
         <div class="theme-toggle-button">
           <ThemeToggle />
         </div>
-        <h1 class="dark:text-[#ddd] font-semibold">{ name }</h1>
+        <h1 class="text-[2rem] dark:text-[#ddd] font-semibold">{ name }</h1>
         <div class="languageToggle">
           <a class="es-lang" href="/min-portfolio">
             <FlagArg />
@@ -47,15 +47,15 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
           </a>
         </div>
       </header>
-      <h2 class="dark:text-[#ddd]">{ label }</h2>
-      <span class="dark:text-[#ddd]">
+      <h2 class="dark:text-[#ddd] text-[#555] font-medium text-[1.1rem]">{ label }</h2>
+      <span class="text-[#666] flex items-center gap-1 text-[0.85rem] tracking-[-0.05rem] dark:text-[#ddd]">
         <WorldMap />
         {city}, {region}
       </span>
       <footer class="flex gap-1 mt-2 print">
         <div class="print">
           {
-            printInfo.map(info => (<p>{ info }</p>))
+            printInfo.map(info => (<p class="text-xs text-[#555]">{ info }</p>))
           }
         </div>
       </footer>
@@ -114,7 +114,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
                   inline-flex items-center 
                   justify-center border h-8 w-8 
                   transition-all duration-[0.3s] ease-[ease] 
-                  p-1 rounded-md border-solid border-[#222]
+                  p-1 rounded-md border-solid border-[#eee]
                   hover:bg-[#eee]
                   dark:text-[#aaa]
                   dark:border-[#777]
@@ -133,7 +133,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
       </footer>
     </div>
     <figure>
-      <img class="profilePic" src={image} alt={name}>
+      <img class="aspect-square object-cover w-28 rounded-lg" src={image} alt={name}>
     </figure>
   </div>
 </Section>
@@ -172,73 +172,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
     border-radius: 1px 10px 10px 1px;
   }
 
-    header div .en-lang:hover {
+  header div .en-lang:hover {
     background: #eee;
-  }
-
-  .profilePic {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    width: 7rem;
-    border-radius: 0.5rem;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    color: #555;
-    font-weight: 500;
-    font-size: 1.1rem;
-    text-wrap: balance;
-  }
-
-  span {
-    color: #666;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-size: 0.85rem;
-    letter-spacing: -0.05rem;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: .35rem;
-    padding-right: 2rem;
-  }
-
-  /* footer a {
-    color: #777;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #eee;
-    padding: 4px;
-    height: 32px;
-    width: 32px;
-    border-radius: 6px;
-    transition: all .5s ease;
-  } */
-
-  /* footer a:hover {
-    background: #eee;
-    border: 1px solid #ddd;
-  } */
-
-  footer p {
-    font-size: .75rem;
-    color: #555;
   }
 
   .print {
