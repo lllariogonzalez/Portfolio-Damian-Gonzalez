@@ -52,17 +52,27 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
         <WorldMap />
         {city}, {region}
       </span>
-      <footer class="print">
+      <footer class="flex gap-1 mt-2 print">
         <div class="print">
           {
             printInfo.map(info => (<p>{ info }</p>))
           }
         </div>
       </footer>
-      <footer class="no-print">
+      <footer class="flex gap-2 mt-2 no-print">
         {
           email && (
             <a 
+              class="text-[#777] 
+                inline-flex items-center 
+                justify-center border h-8 w-8 
+                transition-all duration-[0.3s] ease-[ease] 
+                p-1 rounded-md border-solid border-[#eee]
+                hover:bg-[#eee]
+                dark:text-[#aaa]
+                dark:border-[#777]
+                dark:hover:text-[#000]
+                dark:hover:bg-[#ebebeb]"
               href={`mailto: ${email}`}
               title={`Enviar un correo electrónico a ${name} al correo ${email}`}
               target="_blank"
@@ -75,6 +85,16 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
         {
           phone && (
             <a 
+              class="text-[#777] 
+                inline-flex items-center 
+                justify-center border h-8 w-8 
+                transition-all duration-[0.3s] ease-[ease] 
+                p-1 rounded-md border-solid border-[#eee]
+                hover:bg-[#eee]
+                dark:text-[#aaa]
+                dark:border-[#777]
+                dark:hover:text-[#000]
+                dark:hover:bg-[#ebebeb]"
               href={`tel: ${phone}`}
               title={`Llamar por teléfono a ${name} al número ${phone}`}
               target="_blank"
@@ -90,6 +110,16 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
 
             return (
               <a 
+                class="text-[#777] 
+                  inline-flex items-center 
+                  justify-center border h-8 w-8 
+                  transition-all duration-[0.3s] ease-[ease] 
+                  p-1 rounded-md border-solid border-[#222]
+                  hover:bg-[#eee]
+                  dark:text-[#aaa]
+                  dark:border-[#777]
+                  dark:hover:text-[#000]
+                  dark:hover:bg-[#ebebeb]"
                 href={url}
                 title={`Visitar el perfil de ${username} en ${network}`}
                 target="_blank"
@@ -188,13 +218,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
     padding-right: 2rem;
   }
 
-  footer {
-    display: flex;
-    gap: 4px;
-    margin-top: .5rem;
-  }
-
-  footer a {
+  /* footer a {
     color: #777;
     display: inline-flex;
     align-items: center;
@@ -205,12 +229,12 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean)
     width: 32px;
     border-radius: 6px;
     transition: all .5s ease;
-  }
+  } */
 
-  footer a:hover {
+  /* footer a:hover {
     background: #eee;
     border: 1px solid #ddd;
-  }
+  } */
 
   footer p {
     font-size: .75rem;
