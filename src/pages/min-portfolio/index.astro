@@ -11,11 +11,13 @@ import Skills from '@/components/printablecv-components/Skills.astro';
 import KeyboardManager from '@/components/printablecv-components/KeyboardManager.astro'
 
 import { basics, education, experience, projects, skills } from "@cv"
+import MinTopBar from '@/components/printablecv-components/MinTopBar.astro';
 const { name } = basics
 ---
 
 <PrintableLayout language="es" title=`CV minimalista - ${name}`>
-	<main class="p-16 m-auto w-full">
+	<MinTopBar />
+	<main class="p-16 pt-0 m-auto w-full">
 		<Hero data={basics} />
 		<About data={basics.summary} sectionTitle="Sobre mí" />
 		<Experience data={experience} sectionTitle="Experiencia" />
