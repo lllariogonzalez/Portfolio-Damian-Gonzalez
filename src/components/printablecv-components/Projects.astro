@@ -10,23 +10,23 @@ const { data, sectionTitle } = Astro.props
 ---
 
 <Section title={sectionTitle} >
-  <ul>
+  <ul class="grid grid-cols-[repeat(_auto-fit,minmax(200px,1fr)_)] gap-4">
     {
       data.map(({ name, url, isActive, highlights, description }:any)=> {
         return (
           <li>
-            <article>
-              <header>
-                <a href={url} title={`Ver el proyecto ${name}`} target="_blank" rel="noopener noreferrer">
-                  <h3>{name}</h3>
+            <article class="border gap-4 flex flex-col h-full p-4 rounded-lg border-solid border-[#f2f2f2] dark:border-[#474747]">
+              <header class="flex-1">
+                <a class="text-[#111] hover:underline" href={url} title={`Ver el proyecto ${name}`} target="_blank" rel="noopener noreferrer">
+                  <h3 class="mb-1 dark:text-[#dfdfdf] font-semibold">{name}</h3>
                 </a>
-                <p>{description}</p>
+                <p class="text-xs leading-[1.15rem] mb-2 dark:text-[#bbb]">{description}</p>
               </header>
-              <footer>
+              <footer class="flex flex-wrap gap-1.5 text-[0.8rem]">
                   {
                     highlights.map((highlight: any) => {
                       return(
-                        <span>{highlight}</span>
+                        <span class="text-[#333] text-[0.65rem] font-medium px-2 py-1 rounded-2xl bg-[#eee] dark:bg-[#dbdbdb]">{highlight}</span>
                       )
                     })
                   }
@@ -39,6 +39,7 @@ const { data, sectionTitle } = Astro.props
   </ul>  
 <Section />
 
+<!-- 
 <style>
   ul {
     display: grid;
@@ -96,4 +97,5 @@ const { data, sectionTitle } = Astro.props
     font-weight: 500;
     padding: 0.25rem 0.5rem;
   }
-</style>
+</style> 
+-->
