@@ -40,7 +40,7 @@ const SKILLS_ICONS: Record<string, any> = {
       data.map(({ name }:any) => {
         const Icon = SKILLS_ICONS[name]
         return (
-          <li>
+          <li class="dark:bg-[#dbdbdb]">
             {Icon && <Icon />}
             <span>{name}</span>
           </li>
