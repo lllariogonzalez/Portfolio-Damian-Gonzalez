@@ -46,15 +46,24 @@ const {
         return document.getElementsByTagName("body")[0].classList.contains("dark")
     }
 
+    const savePreferedTheme = (themeSelected: string) => {
+        localStorage.setItem('preferedTheme', themeSelected)
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
         const toggleButton = document.getElementById("theme-toggle");
         toggleButton?.addEventListener("click", () => {
             document.body.classList.toggle("dark");
             document.documentElement.classList.toggle("dark");
             
-            IsThemePreferenceDark()? 
-                MinTopBarIcon?.setAttribute("fill", "#00fa94")
+            IsThemePreferenceDark()
+                ? MinTopBarIcon?.setAttribute("fill", "#00fa94")
                 : MinTopBarIcon?.setAttribute("fill", "#000")
-            });
+
+            IsThemePreferenceDark()
+                ? savePreferedTheme("dark")
+                : savePreferedTheme("light") 
+            }
+        );
     });
 </script>
