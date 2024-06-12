@@ -59,8 +59,9 @@ const profilesInfo = profiles.map(({ network, url }) => {
 
 })
 ---
-<footer class="dark:bg-[#111] dark:border-[#222] dark:text-[#fff]">
-  Pulsa <kbd class="dark:text-[#111] font-bold">Ctrl</kbd> + <kbd class="dark:text-[#111] font-bold">K</kbd> para abrir la paleta de comandos.
+<footer class="commandFooter dark:bg-[#111] dark:border-[#222] dark:text-[#fff]">
+  <kbd class="dark:text-[#111] font-bold">Ctrl</kbd> + <kbd class="dark:text-[#111] font-bold">K</kbd> abre la paleta de comandos o
+  <button class="openNinjaKeys text-[0.75rem] text-[#111] dark:text-[#00fa94] font-semibold underline py-1 px-2">click aquí</button>
 </footer>
 <ninja-keys
   class="dark"
@@ -71,22 +72,27 @@ const profilesInfo = profiles.map(({ network, url }) => {
   <div class="command-footer dark:bg-[#222]" slot="footer">
     <p class="select-instruction dark:text-[#dfdfdf]">
       <kbd class="footer-keyboard dark:text-[#000]">↩</kbd>
-      seleccionar
+      Elegir
     </p>
     <p class="navigate-instruction dark:text-[#dfdfdf]">
       <kbd class="footer-keyboard dark:text-[#000]">↑</kbd>
       <kbd class="footer-keyboard dark:text-[#000]">↓</kbd>
-      navegar
+      Navegar
     </p>
     <p class="close-instruction dark:text-[#dfdfdf]">
       <kbd class="footer-keyboard dark:text-[#000]">Esc</kbd>
-      cerrar
+      Salir
     </p>
   </div>
 <script>
   import "ninja-keys"
 
   const ninja = document.querySelector("ninja-keys")
+  const footerButton= document.querySelector(".openNinjaKeys")
+
+  footerButton?.addEventListener("click", ()=>{
+    ninja?.open()
+  })
 
   if (ninja !== null) {
     const info = ninja.getAttribute("data-info") ?? "[]"
@@ -213,5 +219,11 @@ ninja-keys::part(actions-list) {
 
 ninja-keys::part(ninja-selected) {
   background: rgba(200, 200, 200, 0.1);
+}
+
+@media (max-width: 640px) {
+  ninja-keys {
+  --ninja-width: 375px;
+  }
 }
 </style>
