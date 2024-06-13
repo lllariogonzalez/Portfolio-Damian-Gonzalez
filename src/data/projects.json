@@ -170,5 +170,32 @@
                 "icon": "github"
             }
         ]
+    },
+    {
+        "id": "snakeGame",
+        "carouselImages": ["1.webp", "2.webp"],
+        "projectRepo": "https://github.com/nangonz/christmas-game",
+        "projectSite": "https://christmas-wrapping-game.netlify.app",
+        "projectTitle": "Wrapping Game",
+        "projectSlogan": "Ayuda a Santa a empaquetar regalos",
+        "projectDescription": "Minijuego basado en el clasico snake-game con temática festiva",
+        "projectTechnologies": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
     }
 ]
