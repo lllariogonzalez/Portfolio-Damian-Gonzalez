@@ -197,5 +197,32 @@
                 "icon": "github"
             }
         ]
+    },
+    {
+        "id": "clockTimer",
+        "carouselImages": ["1.webp", "2.webp"],
+        "projectRepo": "https://github.com/nangonz/digital-clock",
+        "projectSite": "https://digital-clockwtimer.netlify.app/",
+        "projectTitle": "Reloj Digital",
+        "projectSlogan": "Reloj, alarma y temporizador pomodoro",
+        "projectDescription": "Un pequeño proyecto realizado en vanilla javascript",
+        "projectTechnologies": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
     }
 ]
