@@ -224,5 +224,32 @@
                 "icon": "github"
             }
         ]
+    },
+    {
+        "id": "calculator",
+        "carouselImages": ["1.webp", "2.webp"],
+        "projectRepo": "https://github.com/nangonz/basic-iphone-calculator",
+        "projectSite": "https://blueg-calculator.netlify.app/",
+        "projectTitle": "Calculadora",
+        "projectSlogan": "Calculadora básica con estilo iphone",
+        "projectDescription": "Un pequeño realizado en vanilla javascript",
+        "projectTechnologies": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
     }
 ]
