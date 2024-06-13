@@ -1,5 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  // "extends": "astro/tsconfigs/base",
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
@@ -10,7 +12,26 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@cv": [
+        "./src/cv.json"
+      ],
+      "@cv-eng": [
+        "./src/cv-eng.json"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "@p/*": [
+        "./public/*"
+      ]
+    },
+    "plugins": [
+			{
+				"name": "@astrojs/ts-plugin"
+			}
+		]
   },
-  "extends": "astro/tsconfigs/base"
 }

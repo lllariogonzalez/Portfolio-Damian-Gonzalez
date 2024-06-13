@@ -1,23 +1,5 @@
 [
     {
-        "id": "HenryWebDevelopment",
-        "educationPicture": "soyHenry.webp",
-        "educationTitle": "Full stack Web Developer",
-        "educationType": "Bootcamp",
-        "educationTime": "Diciembre 2022",
-        "educationCompany": "soyHenry",
-        "educationLink": "https://certificates.soyhenry.com/cert?id=8624379f-ea2c-49ae-9d7a-7f5d9e5779a2"
-    },
-    {
-        "id": "unCuyo",
-        "educationPicture": "unCuyo.webp",
-        "educationType": "Carrera de Grado",
-        "educationTitle": "Contabilidad Pública",
-        "educationTime": "20010-2015",
-        "educationCompany": "Universidad Nacional de Cuyo",
-        "educationLink": "https://drive.google.com/file/d/1vZowGHJteAIjCDXlbS87jJFw1h65uVOE/view?usp=sharing"
-    },
-    {
         "id": "amicana",
         "educationPicture": "amicana.webp",
         "educationType": "Lengua Extranjera",
@@ -36,13 +18,13 @@
         "educationLink": "https://www.freecodecamp.org/certification/nangonz/javascript-algorithms-and-data-structures"
     },
     {
-        "id": "reactProfesional",
-        "educationPicture": "codfacilito.webp",
-        "educationTitle": "Curso profesional de React",
-        "educationType": "Plataforma web de enseñanza",
-        "educationTime": "Noviembre 2023",
-        "educationCompany": "Código Facilito",
-        "educationLink": "https://drive.google.com/file/d/1EJjV8qrWk9wPyTmmyiEfeQgNliqy2V2a/view?usp=drive_link"
+        "id": "HenryWebDevelopment",
+        "educationPicture": "soyHenry.webp",
+        "educationTitle": "Full stack Web Developer",
+        "educationType": "Bootcamp",
+        "educationTime": "Diciembre 2022",
+        "educationCompany": "soyHenry",
+        "educationLink": "https://certificates.soyhenry.com/cert?id=8624379f-ea2c-49ae-9d7a-7f5d9e5779a2"
     },
     {
         "id": "diseñoUxUi",
@@ -52,5 +34,14 @@
         "educationTime": "Julio 2023",
         "educationCompany": "Programa Codo a codo de la Ciudad Autónoma de Buenos Aires",
         "educationLink": "https://drive.google.com/file/d/1fyNB-rQ6RLEwDyNmpz1tHSTjGx-GNSHt/view?usp=drive_link"
+    },
+    {
+        "id": "reactProfesional",
+        "educationPicture": "codfacilito.webp",
+        "educationTitle": "Curso profesional de React",
+        "educationType": "Plataforma web de enseñanza",
+        "educationTime": "Noviembre 2023",
+        "educationCompany": "Código Facilito",
+        "educationLink": "https://drive.google.com/file/d/1EJjV8qrWk9wPyTmmyiEfeQgNliqy2V2a/view?usp=drive_link"
     }
 ]

@@ -1,0 +1,35 @@
+---
+import Section from "@/components/printablecv-components/Section.astro"
+
+interface Props {
+  data: any;
+  sectionTitle: string;
+}
+
+const { data, sectionTitle } = Astro.props
+---
+<Section title={sectionTitle} >
+  <ul class="flex flex-col gap-4">
+  {
+    data.map(({ institution, area, startDate, endDate, studyType}:any) => {
+      const workPeriod = `${startDate} - ${endDate}`
+      return (
+        <li>
+          <article>
+            <header class="sm:flex justify-between items-start mb-1">
+              <div>
+                <h3 class="font-semibold text-[1.1rem] text-[#111] dark:text-[#dfdfdf]">{institution}</h3>
+                <h4 class="font-normal text-[#222] dark:text-[#dfdfdf]">{area}</h4>
+              </div>
+              <time class="text-[0.85rem] text-[#555] dark:text-[#e2e2e2]">{workPeriod}</time>
+            </header>
+            <footer>
+              <p class="text-[#555] dark:text-[#bbb]">{studyType}</p>
+            </footer>
+          </article>
+        </li>
+      )
+    })
+  }
+  </ul>
+<Section />

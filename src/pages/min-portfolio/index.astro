@@ -1,0 +1,29 @@
+---
+
+import PrintableLayout from '@/layouts/printableLayout.astro'
+
+import Hero from '@/components/printablecv-components/Hero.astro'
+import About from '@/components/printablecv-components/About.astro';
+import Education from '@/components/printablecv-components/Education.astro';
+import Experience from '@/components/printablecv-components/Experience.astro';
+import Projects from '@/components/printablecv-components/Projects.astro';
+import Skills from '@/components/printablecv-components/Skills.astro';
+import KeyboardManager from '@/components/printablecv-components/KeyboardManager.astro'
+
+import { basics, education, experience, projects, skills } from "@cv"
+import MinTopBar from '@/components/printablecv-components/MinTopBar.astro';
+const { name } = basics
+---
+
+<PrintableLayout language="es" title=`CV minimalista - ${name}`>
+	<MinTopBar />
+	<main class="p-16 pt-0 m-auto w-full">
+		<Hero data={basics} />
+		<About data={basics.summary} sectionTitle="Sobre mí" />
+		<Experience data={experience} sectionTitle="Experiencia" />
+		<Education data={education} sectionTitle="Educación" />
+		<Projects data={projects} sectionTitle="Proyectos" />
+		<Skills data={skills} sectionTitle="Habilidades" />
+	</main>
+	<KeyboardManager />
+</PrintableLayout>

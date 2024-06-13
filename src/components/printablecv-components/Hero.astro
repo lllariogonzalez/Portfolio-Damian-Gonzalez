@@ -1,0 +1,180 @@
+---
+import Section from "@/components/printablecv-components/Section.astro"
+
+import Mail from "@/min-port-icons/Mail.astro"
+import Phone from "@/min-port-icons/Phone.astro"
+import WorldMap from "@/min-port-icons/WorldMap.astro"
+import LinkedIn from "@/min-port-icons/LinkedIn.astro"
+import Github from "@/min-port-icons/Github.astro"
+import Xtw from "@/min-port-icons/Xtw.astro"
+import FlagArg from "@/min-port-icons/FlagArg.astro"
+import FlagUsa from "@/min-port-icons/FlagUsa.astro"
+interface Props {
+	data: Record<string, any>;
+}
+
+const { data } = Astro.props
+
+const { name, label, image, location, profiles, phone, email } = data
+const { city, region } = location
+
+const SOCIAL_ICONS: Record<string, any> = {
+  LinkedIn,
+  Github,
+  Xtw
+}
+
+const linkedUrl = profiles.find(({ network }:any) => network === "LinkedIn")?.url
+const printInfo = [email, phone, linkedUrl].filter(Boolean)
+---
+
+<Section>
+  <div class="flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
+    <div class="flex flex-col gap-[0.35rem]">
+      <header class="flex flex-col-reverse sm:flex-row">
+        <h1 class="text-[2rem] dark:text-[#ddd] font-semibold self-start">{ name }</h1>
+        <div class="languageToggle pt-[0.25rem]">
+          <a class="es-lang rounded-[10px_0px_0px_10px] hover:rounded-[5px_0px_0px_5px] hover:bg-[rgb(247,255,163)] dark:hover:bg-[#4d4d4d]" href="/min-portfolio">
+            <FlagArg />
+          </a>
+          <a class="en-lang rounded-[0px_10px_10px_0px] hover:rounded-[0px_5px_5px_0px] hover:bg-[rgb(247,255,163)] dark:hover:bg-[#4d4d4d]" href="/min-portfolio/en">
+            <FlagUsa />
+          </a>
+        </div>
+      </header>
+      <h2 class="dark:text-[#ddd] text-[#555] font-medium text-[1.1rem]">{ label }</h2>
+      <span class="text-[#666] flex items-center gap-1 text-[0.85rem] tracking-[-0.05rem] dark:text-[#ddd]">
+        <WorldMap />
+        {city}, {region}
+      </span>
+      <footer class="flex gap-1 mt-2 print">
+        <div class="print">
+          {
+            printInfo.map(info => (<p class="text-xs text-[#555]">{ info }</p>))
+          }
+        </div>
+      </footer>
+      <footer class="flex gap-2 mt-2 no-print">
+        {
+          email && (
+            <a 
+              class="text-[#777] 
+                inline-flex items-center 
+                justify-center border h-8 w-8 
+                transition-all duration-[0.3s] ease-[ease] 
+                p-1 rounded-md border-solid border-[#eee]
+                hover:bg-[#eee]
+                dark:text-[#aaa]
+                dark:border-[#777]
+                dark:hover:text-[#000]
+                dark:hover:bg-[#ebebeb]"
+              href={`mailto: ${email}`}
+              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              target="_blank"
+              rel="nooperner noreferrer"
+            >
+            <Mail />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a 
+              class="text-[#777] 
+                inline-flex items-center 
+                justify-center border h-8 w-8 
+                transition-all duration-[0.3s] ease-[ease] 
+                p-1 rounded-md border-solid border-[#eee]
+                hover:bg-[#eee]
+                dark:text-[#aaa]
+                dark:border-[#777]
+                dark:hover:text-[#000]
+                dark:hover:bg-[#ebebeb]"
+              href={`tel: ${phone}`}
+              title={`Llamar por teléfono a ${name} al número ${phone}`}
+              target="_blank"
+              rel="nooperner noreferrer"
+            >
+            <Phone />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }: any)=> {
+            const Icon = SOCIAL_ICONS[network]
+
+            return (
+              <a 
+                class="text-[#777] 
+                  inline-flex items-center 
+                  justify-center border h-8 w-8 
+                  transition-all duration-[0.3s] ease-[ease] 
+                  p-1 rounded-md border-solid border-[#eee]
+                  hover:bg-[#eee]
+                  dark:text-[#aaa]
+                  dark:border-[#777]
+                  dark:hover:text-[#000]
+                  dark:hover:bg-[#ebebeb]"
+                href={url}
+                title={`Visitar el perfil de ${username} en ${network}`}
+                target="_blank"
+                rel="nooperner noreferrer"
+              >
+                <Icon />
+              </a>
+            )
+          })
+        }
+      </footer>
+    </div>
+    <figure>
+      <img class="aspect-square object-cover w-28 rounded-lg" src={image} alt={name}>
+    </figure>
+  </div>
+</Section>
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  header div .es-lang {
+    border-bottom: 1px solid #777;
+    border-left: 1px solid #777;
+    border-top: 1px solid #777;
+    padding-inline: 8px;
+    padding-block: 2px;
+  }
+
+  header div .en-lang {
+    border: 1px solid #777;
+    padding-inline: 8px;
+    padding-block: 2px;
+  }
+
+  .print {
+    display: none;
+  }
+
+  @media print {
+    .print {
+      display: block;
+    }
+    .no-print {
+      display: none;
+    }
+    header div a {
+      display: none;
+    }
+  }
+
+</style>

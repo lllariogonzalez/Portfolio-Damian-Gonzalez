@@ -170,5 +170,86 @@
                 "icon": "github"
             }
         ]
+    },
+    {
+        "id": "snakeGame",
+        "carouselImages": ["1.webp", "2.webp"],
+        "projectRepo": "https://github.com/nangonz/christmas-game",
+        "projectSite": "https://christmas-wrapping-game.netlify.app",
+        "projectTitle": "Wrapping Game",
+        "projectSlogan": "Ayuda a Santa a empaquetar regalos",
+        "projectDescription": "Minijuego basado en el clasico snake-game con temática festiva",
+        "projectTechnologies": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
+    },
+    {
+        "id": "clockTimer",
+        "carouselImages": ["1.webp", "2.webp"],
+        "projectRepo": "https://github.com/nangonz/digital-clock",
+        "projectSite": "https://digital-clockwtimer.netlify.app/",
+        "projectTitle": "Reloj Digital",
+        "projectSlogan": "Reloj, alarma y temporizador pomodoro",
+        "projectDescription": "Un pequeño proyecto realizado en vanilla javascript",
+        "projectTechnologies": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
+    },
+    {
+        "id": "calculator",
+        "carouselImages": ["1.webp", "2.webp"],
+        "projectRepo": "https://github.com/nangonz/basic-iphone-calculator",
+        "projectSite": "https://blueg-calculator.netlify.app/",
+        "projectTitle": "Calculadora",
+        "projectSlogan": "Calculadora básica con estilo iphone",
+        "projectDescription": "Un pequeño realizado en vanilla javascript",
+        "projectTechnologies": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "CSS",
+                "icon": "css"
+            },
+            {
+                "name": "HTML",
+                "icon": "html"
+            },
+            {
+                "name": "Github",
+                "icon": "github"
+            }
+        ]
     }
 ]

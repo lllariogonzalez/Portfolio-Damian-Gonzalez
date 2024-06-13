@@ -1,6 +1,6 @@
 ---
-import henry from "/education/soyHenry.webp"
-import footerPic from "/footerPic.webp"
+import henry from "@p/education/soyHenry.webp"
+import footerPic from "@p/footerPic.webp"
 ---
 
 <footer
@@ -10,7 +10,7 @@ import footerPic from "/footerPic.webp"
         class="flex flex-col sm:flex-row sm:items-center gap-8 sm:justify-between"
     >
         <img 
-            src={footerPic} 
+            {...footerPic} 
             alt="footerPicture"
             class="flex justify-start items-start sm:h-[100px] w-[100px]"
         >
@@ -66,7 +66,7 @@ import footerPic from "/footerPic.webp"
         <div class="flex flex-col gap-2">
             <div class="flex items-center gap-3">
                 <img
-                    src={henry}
+                    {...henry}
                     alt="henrylogo"
                     class="flex items-center justify-center text-[0.7rem] text-center h-11 w-11 bg-light-gray-secondary dark:bg-dark-gray-secondary rounded-md"
                     loading="lazy"

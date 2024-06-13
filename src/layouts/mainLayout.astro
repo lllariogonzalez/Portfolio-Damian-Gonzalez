@@ -39,16 +39,27 @@ import "../styles/globals.css";
     <body class="bg-light-fondo-primary dark:bg-dark-fondo-primary">
         <slot />
         <script>
-            const darkThemeMq = window.matchMedia(
-                "(prefers-color-scheme: dark)"
-            );
-            if (darkThemeMq.matches) {
-                document.body.classList.add("dark");
-                document.documentElement.classList.add("dark");
-            } else {
-                document.body.classList.remove("dark");
-                document.documentElement.classList.remove("dark");
-            }
+            const themeSelected = localStorage.getItem("preferedTheme")
+			const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+			const addDarkToClassList = () => {
+					document.body.classList.add("dark");
+					document.documentElement.classList.add("dark");
+			}
+
+			const removeDarkFromClassList = () => {
+				document.body.classList.remove("dark");
+				document.documentElement.classList.remove("dark");
+			}
+
+			if (themeSelected) {
+				themeSelected === "dark" 
+					? addDarkToClassList()
+					: removeDarkFromClassList()
+			} else {
+				darkThemeMq.matches
+					? addDarkToClassList()
+					: removeDarkFromClassList()
+			}
         </script>
     </body>
 </html>

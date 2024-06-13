@@ -1,0 +1,287 @@
+{
+  "basics": {
+    "name": "Damian Gonzalez",
+    "label": "Fullstack developer with a preference for frontend",
+    "image": "/footerPic.webp",
+    "email": "nangonz91@gmail.com",
+    "phone": "+54 2612451106",
+    "url": "https://damian-gonzalez.vercel.app",
+    "summary": "I am a full stack Javascript Web Developer with a preference for front end. I also studied UX UI design in a program of the Ministry of Education of CABA. During my training I have been part of multicultural work teams where I was able to develop communication and teamwork skills participating in the front end and back end development of web applications implementing an agile work methodology.",
+    "location": {
+      "address": "",
+      "postalCode": "5525",
+      "city": "Mendoza",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Damian G.",
+        "url": "https://linkedin.com/in/dami-gonzalez/",
+        "icon": "LinkedIn"
+      },
+      {
+        "network": "Xtw",
+        "username": "nang0nz",
+        "url": "https://twitter.com/nang0nz",
+        "icon": "Xtw"
+      },
+      {
+        "network": "Github",
+        "username": "nangonz",
+        "url": "https://github.com/nangonz",
+        "icon": "Github"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "name": "La Nueva Jerusalén",
+      "position": "Front end Developer",
+      "url": "https://www.lanuevajerusalenamorysalvacion.com/",
+      "startDate": "2023",
+      "endDate": "Present",
+      "summary": "Next.js website for the church that includes user management, administration panels and email notifications."
+    },
+    {
+      "name": "E-commerce Tecnoshop",
+      "position": "Full stack Developer",
+      "url": "https://e-commerce-tecnoshop.vercel.app/",
+      "startDate": "Octubre 2022",
+      "endDate": "Noviembre 2022",
+      "summary": "I participated in the design and development of a technology e-commerce as part of an agile team following the SCRUM methodology. My main focus was on the front end using React."
+    },
+    {
+      "name": "Pokeapp (académico)",
+      "position": "Full stack Developer",
+      "url": "https://poke-app-seven.vercel.app/home",
+      "startDate": "Septiembre 2022",
+      "endDate": "Octubre 2022",
+      "summary": "Single Page Application using React, Redux, Javascript, HTML and CSS. Pagination, Filtering, Creation, Consumption of Rest Api of pokemon."
+    }
+  ],
+  "volunteer": [{
+    "organization": "Organization",
+    "position": "Volunteer",
+    "url": "https://organization.com/",
+    "startDate": "2012-01-01",
+    "endDate": "2013-01-01",
+    "summary": "Description…",
+    "highlights": [
+      "Awarded 'Volunteer of the Month'"
+    ]
+  }],
+  "education": [
+    {
+      "institution": "HENRY",
+      "url": "https://www.soyhenry.com",
+      "area": "Desarrollo Web Full Stack",
+      "studyType": "Programming Bootcamp with +800 hours of training.",
+      "startDate": "Marzo 2022",
+      "endDate": "Diciembre 2022",
+      "score": null,
+      "courses": null
+    },
+    {
+      "institution": "AMICANA",
+      "url": "https://www.amicana.com",
+      "area": "Idioma",
+      "studyType": "Advanced English Course",
+      "startDate": "Marzo 2009",
+      "endDate": "Diciembre 2011",
+      "score": null,
+      "courses": null
+    },
+    {
+      "institution": "Codigo Facilito",
+      "url": "https://codigofacilito.com/",
+      "area": "Desarrollo Front End",
+      "studyType": "React Professional Course",
+      "startDate": "Noviembre 2023",
+      "endDate": "Diciembre 2023",
+      "score": null,
+      "courses": null
+    },
+    {
+      "institution": "Programa Codo a Codo",
+      "url": "https://inscripcionesagencia.bue.edu.ar/codoacodo/",
+      "area": "Diseño UX-UI",
+      "studyType": "User experience and interface design course at figma",
+      "startDate": "Marzo 2023",
+      "endDate": "Julio 2023",
+      "score": null,
+      "courses": null
+    }
+],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [
+    {
+      "name": "HTML",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [
+    {
+      "name": "La Nueva Jerusalén",
+      "isActive": true,
+      "description": "Web de la Iglesia con contenido que se publica diariamente.",
+      "highlights": [
+        "Gestión de usuarios",
+        "Devocionales diarios"
+      ],
+      "url": "https://www.lanuevajerusalenamorysalvacion.com/"
+    },
+    {
+      "name": "Tecnoshop",
+      "isActive": false,
+      "description": "Aplicación completa de e-commerce de tecnología.",
+      "highlights": [
+        "Gestión de productos",
+        "Búsqueda y filtrado"
+      ],
+      "url": "https://e-commerce-tecnoshop.vercel.app/"
+    },
+    {
+      "name": "Pokeapp",
+      "isActive": false,
+      "description": "Web con temática pokémon, proyecto académico.",
+      "highlights": [
+        "CRUD de personajes",
+        "Consumo de API"
+      ],
+      "url": "https://poke-app-seven.vercel.app/home"
+    },
+    {
+      "name": "Lista de tareas",
+      "isActive": true,
+      "description": "Aplicación para crear, editar y eliminar tareas pendientes.",
+      "highlights": [
+        "Gestíon de tareas",
+        "Desarrollado en Vue.js"
+      ],
+      "url": "https://todoappwithvue.netlify.app/"
+    },
+    {
+      "name": "Adivina la palabra",
+      "isActive": true,
+      "description": "Clon de wordle, cubre la lógica central del juego.",
+      "highlights": [
+        "Juego de palabras",
+        "Pasatiempo"
+      ],
+      "url": "https://wordle-guessing-game.netlify.app/"
+    },
+    {
+      "name": "Mubin",
+      "isActive": true,
+      "description": "Diseño en Figma del prototipo de una app de alquiler compartido",
+      "highlights": [
+        "Diseño UX UI",
+        "Proyecto Académico"
+      ],
+      "url": "https://www.figma.com/proto/cXMvkM2GYfSDJDarmmol0K/Atomic-UIKit-Proto?type=design&node-id=65-1808&scaling=scale-down&page-id=63%3A1807&starting-point-node-id=65%3A1808&show-proto-sidebar=1&t=E4IjagvwFxIuvieN-1"
+    }
+  ]
+}
